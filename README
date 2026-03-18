@@ -33,6 +33,10 @@ An HTTP server that serves the forecasted weather.
 
 ---
 
+## Not Included
+ - for demostration purposes only, does not include tests scripts, swagger documentation, or fault tolerances
+    which may be included in a production ready app.
+
 ## Prerequisites
 
 - **Node.js** >= 18  
