@@ -1,0 +1,27 @@
+# Weather Forecaster API
+
+An Express server providing forecast data from the **National Weather Service (NWS) API**.  
+Supports latitude and longitude queries, caches responses, validates inputs, and classifies temperatures as **hot**, **moderate**, or **cold**.
+
+---
+
+## Features
+
+- Accepts `lat` and `lon` query parameters
+- Returns today's forecast in a clean JSON format:
+
+```json
+{
+  "location": { "lat": 33.68, "lon": -84.43 },
+  "forecast": "Mostly Sunny",
+  "temperature": 56,
+  "unit": "F",
+  "classification": "moderate"
+}
+
+---
+
+## Prerequisites
+
+- **Node.js** >= 18  
+- **npm** (comes with Node.js)  
