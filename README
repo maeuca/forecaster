@@ -1,0 +1,66 @@
+# Weather Forecaster API
+
+An HTTP server that serves the forecasted weather. 
+
+ - Example Request
+   
+   curl "http://localhost:3000/weather?lat=33.68&lon=-84.43"
+
+ - Example Response
+
+    {
+    "location": { "lat": 33.68, "lon": -84.43 },
+    "forecast": "Mostly Sunny",
+    "temperature": 56,
+    "unit": "F",
+    "classification": "moderate"
+    }
+
+---
+
+## Features
+
+ - Accepts latitude and longitude coordinates
+ - Returns the short forecast for that area for Today (“Partly Cloudy” etc)
+ - Returns a characterization of whether the temperature is “hot”, “cold”, or “moderate” 
+ - Use the National Weather Service API Web Service as a data source.
+
+ ## Additional Features
+- Rate limiting to prevent abuse
+- In-memory caching to reduce API calls
+- Input validation using **Zod**
+- Type-safe responses with **TypeScript**
+
+---
+
+## Prerequisites
+
+- **Node.js** >= 18  
+- **npm** (comes with Node.js)  
+
+---
+
+## Clone and Install
+
+Clone the repository from GitHub and install dependencies:
+
+```bash
+# Clone the repo
+git clone https://github.com/maeuca/forecaster.git
+cd forecaster
+
+# Install dependencies
+npm install
+
+# Build
+npm run build
+
+# Run
+npm start
+
+# Run Development mode
+npm run dev
+
+# Clean
+npm run clean
+
